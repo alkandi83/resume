@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical A4 Drawing</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .a4-drawing {
+            max-width: 100%;
+            height: auto;
+            max-height: calc(100vh - 20px); /* Вычитаем 20px, чтобы учесть верхний и нижний padding или margin, если они есть */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="a4-drawing" src="Resume.jpg" alt="A4 Drawing">
+    </div>
+</body>
+</html>
